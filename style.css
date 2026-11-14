@@ -1,0 +1,219 @@
+/* ===== Dasar CSS ===== */
+* { 
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* ===== SAMBUTAN ===== */
+.hero {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    text-align: center;
+    padding: 60px 60px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 20px 0 10px;
+}
+
+.hero h2 {
+    font-size: 2.8em;
+    margin: 5px 0;
+}
+
+.hero p {
+     margin: 4px 0;
+}
+
+/* ===== SECTION umum ===== */
+section {
+max-width: 800px;
+margin: 20px auto;
+padding: 24px;
+background: white;
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+/* ===== PETA ===== */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* ===== RSVP ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* ===== Tabel (halaman admin) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #14223f;
+    color: white;
+}
+
+td button,
+section > button {
+    padding: 8px 14px;
+    background: #3b82f6;
+    color: #14223f;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+td button:hover,
+section > button:hover {
+    background: #2563eb;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.6em;
+    }
+
+    section {
+        margin: 12px;
+        padding: 16px;
+    }
+
+    /* ===== Tabel (halaman admin) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #14223f;
+    color: white;
+}
+
+td button,
+section > button {
+    padding: 8px 14px;
+    background: #f4b233;
+    color: #14223f;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+td button:hover,
+section > button:hover {
+    background: #ffc653;
+}
+
+}
+
+/* ===== Form RSVP ===== */
+label {
+    font-weight: bold;
+    color: #14223f;
+    margin-top: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d5dae3;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: white;
+}
+
+form button {
+    align-self: flex-start;
+    margin-top: 20px;
+    padding: 16px 32px;
+    background: #3b82f6;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+form button:hover {
+    background: #3b82f6;
+}
+
+.rsvp-pesan {
+    display: none;
+    margin-top: 16px;
+    padding: 14px;
+    background: #f2f2f2;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.btn-hero {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #3b82f6;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+}
